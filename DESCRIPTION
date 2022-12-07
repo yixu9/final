@@ -1,0 +1,23 @@
+Package: textm
+Title: A package for doing text mining
+Version: 0.0.0.9000
+Authors@R: c(
+    person("Yahui", "Zhang", email = "y.zhang2@ufl.edu", role = "cre"),
+    person("Yi", "Xu", email = "xu.yi@ufl.edu", role = "aut"))
+Description: Doing test mining on books.
+Depends: R (>= 3.6.0), 
+    tidyr, 
+    dplyr,
+    tidytext
+Imports: wordcloud2, ggraph, usethis, ggplot2, stringr, tidygraph
+License: GPL-2
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+LazyData: true

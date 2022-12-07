@@ -1,0 +1,74 @@
+---
+title: "Vignette in package TextMining"
+author: "Yahui Zhang, Yi Xu"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+## Introduction
+## 1.Data
+This package is concerned with Book content analysis. To get book resource, you can go to https://www.gutenberg.org and search for the book you want. You don't need to download the digital form of book, but find "EBook-No." of the book and gutenberg_download(EBook-No.) can help download book data into R. There can be many editions of one book, but EBook-No can identify them, for example, the EBook-No.1342 associated with only one result of 'Pride and Prejudice'.
+
+
+## 2.Funcitons
+
+### 2.1 Term Frequency Analysis
+
+### wf_hist(x)
+It is used to make a histogram for the 10 most frequent words in the book. 
+x is the book data.
+
+
+### 2.2 Word Cloud
+
+### wcloud(x)
+It is used to make a wordcloud for the 200 most frequent words in the book. 
+x is the book data.
+
+
+
+### 2.3 Word Bigram
+
+### bitable(x,y)
+It is used to find bigrams of a specific word in this book.
+x is the book data, y can be either a list of character names such as c("Jane","Ben","Elizabeth") or a single name.
+
+
+
+### 2.4 Word Relationship Analysis
+
+### binet(x)
+It is used to show the network of bigrams in the book.
+x is the book data.
+
+
+### 2.5 Appearance Summary
+
+### AppearCount(x,y)
+It is used to show a dataframe for appearance times of character in each chapter.
+x is the book data, y is character name.
+
+
+
+### 2.6 Sentiment Analysis
+
+### Emo(x,y)
+It is used to make a histogram for main sentiment of each chapter in the book.
+x is the book data, y is character name.
+
+
+
+```{r, echo=FALSE}
+knitr::opts_chunk$set(purl = FALSE)
+```
+
