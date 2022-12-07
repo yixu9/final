@@ -27,6 +27,6 @@ bitable <- function(x, y) {
         drop_na()
     bigram_freq %>%
         filter(word2 == y) %>%
-        count(street = str_c(word1, word2, sep = " "), sort = TRUE)
+        count(y = str_c(word1, word2, sep = " "), sort = TRUE)
 }
 
