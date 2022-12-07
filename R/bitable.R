@@ -2,7 +2,7 @@
 ##' We want to find bigrams of a specific word in this book, if you input a word, 
 ##' you can get the word associated with it and also the frequency of it.
 ##' @title bigram frequency table
-##' @param x book file data name
+##' @param x data name
 ##' @param y word
 ##' @return bigrams of the word
 ##' @author Yi Xu
